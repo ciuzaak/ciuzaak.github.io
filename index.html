@@ -58,6 +58,32 @@
             font-size: 1.5em;
         }
 
+        .link-container {
+            text-align: center;
+            margin-top: 0px;
+        }
+
+        .fancy-link {
+            display: inline-block;
+            margin: 5px;
+            padding: 8px 16px;
+            /* background-color: #f5f5f5; */
+            /* 浅灰色背景 */
+            color: #333;
+            /* 深色文本 */
+            text-decoration: none;
+            border-radius: 2px;
+            font-size: 14px;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .fancy-link:hover {
+            background-color: #e0e0e0;
+            /* 鼠标悬停时稍微变深 */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            /* 轻微的阴影效果 */
+        }
+
         footer {
             text-align: center;
             padding: 20px;
@@ -70,6 +96,9 @@
                 /* Stack the items vertically */
                 margin-bottom: 10px;
                 /* Adjust the space between stacked items as needed */
+            }
+            .fancy-link {
+                display: block;
             }
         }
     </style>
@@ -94,6 +123,12 @@
             <li><a href="https://youtube.com/@ciuzaakwong" target="_blank"><i class="fab fa-youtube"></i> YouTube</a>
             </li>
         </ul>
+    </div>
+
+    <div class="link-container">
+        <a href="https://www.ciuzaak.com/blog" class="fancy-link">Blog</a>
+        <a href="https://sing-box.ciuzaak.com" class="fancy-link">Converter</a>
+        <a href="https://yacd.ciuzaak.com" class="fancy-link">Dashboard</a>
     </div>
 
     <footer>
